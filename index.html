@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/8b902bd031.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1> <b>PIRATES</b> </h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="banner.jpg" alt="">
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="ROW">
+                <div class="about_col_1">
+                    <img class="weimage" src="Team pirates.jpg" />
+                </div>
+                <div class="about_col_2">
+                    <h1 class="title_1">About My Team</h1>
+                    <p>
+                        We are three members in our team. which are Aditya Sharma, Kajal Gupta, and Deepak Singh
+                    </p>
+
+                    <div class="title_2">
+                        <p class="title_2_links active_link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="title_2_links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="title_2_links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="title_contents active_1" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br />Web App interfaces</li>
+                            <li>
+                                <span>App Development</span><br />Building Andriod/IOS apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title_contents" id="experience">
+                        <ul>
+                            <li><span>1-10th</span><br />Good</li>
+                            <li><span>10th-12th</span><br />Good</li>
+                            <li><span>12-Engg</span><br />Good</li>
+                        </ul>
+                    </div>
+                    <div class="title_contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br />Completed 10th</li>
+                            <li><span>2022</span><br />Completed 12th</li>
+                            <li><span>2022-2026</span><br />Still Studying</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project">
+        <div class="container">
+            <h1 class="title_1">My Project</h1>
+            <div class="project_list">
+                <div>
+                    <i class="fa-solid fa-person-rifle"></i>
+                    <h2>Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates dolore nesciunt labore
+                        quisquam animi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Apple clone</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates dolore nesciunt labore
+                        quisquam animi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Color Switcher</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates dolore nesciunt labore
+                        quisquam animi.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title_1">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos quae dicta quasi quibusdam
+                            ea placeat neque sint.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos quae dicta quasi quibusdam
+                            ea placeat neque sint.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos quae dicta quasi quibusdam
+                            ea placeat neque sint.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact_1">
+            <div class="content_1_title">
+                <h2 class="title_1">Contact Me</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="f43cfab6-4aee-4d2f-99c0-1518df8d949b">
+            <input type="text" name="name" placeholder="Your Name..." class="contact_inputs" required>
+            <input type="phone no" name="phone no" placeholder="Phone No..." class="contact_inputs" required>
+            <input type="email" name="email" placeholder="Your Email..." class="contact_inputs" required>
+            <textarea name="message" placeholder="Your Message.." id="Your Message" class="contact_inputs"
+                required></textarea>
+            <button type="submit">Submit <img src="arrow_icon.png"></button>
+        </form>
+    </div>
+
+    <div id="details">
+        <div class="container">
+            <div class="details_1">
+                <h1>More Details</h1>
+                <p><i class="fa-solid fa-envelope"></i> adish9536@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9536430864</p>
+                <div class="social_icons">
+                    <a href="https://www.facebook.com/profile.php?id=100034585936915&mibextid=ZbWKwL"><i
+                            class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/ aditya_bhai_bairagi?igsh=MWg0d243M2IxcWQ0aA=="><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/aditya-sharma-53a78627b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/Shivam_kr01?t=LGAtbcihUo1R7y4K_vJs-Q&s=09"><i
+                            class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="aditya cv.jpg.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
